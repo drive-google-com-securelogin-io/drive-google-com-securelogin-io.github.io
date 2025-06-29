@@ -1,0 +1,13 @@
+
+<script>
+    const htmlContent = `
+    <body>
+        <h1>Longdomain Spoof</h1>
+     
+    </body>
+    `;
+
+const blob = new Blob([htmlContent], { type: 'text/html' });
+const url = URL.createObjectURL(blob);
+const a = document.location=url;  
+</script>
